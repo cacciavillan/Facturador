@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap  </title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh">
+            <div class="col-sm-3 col-md-1 bg-dark">
+                <!-- Sidebar -->
+                <h3>Sidebar</h3>
+                <p>Contenido del sidebar</p>
+                <div class="btn-group-vertical w-100">
+                    <button type="button" class="btn btn-primary mb-5">Agregar Nuevo Cliente</button>
+                    <button type="button" class="btn btn-light mb-5">Pedidos</button>
+                    <button type="button" class="btn btn-primary mb-5">Presupuestos</button>
+                    <button type="button" class="btn btn-light mb-5">Facturas</button>
+                    <button type="button" class="btn btn-primary mb-5">Clientes</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-9">
+                <!-- Cuerpo principal -->
+                <h3>Facturador</h3>
+                <p>Contenido del Facturador</p>
+                <table id="facturadorTable" class="table table-striped"> 
+                    <thead>
+                        <tr>
+                            <th class="centered">Productos</th>
+                            <th class="centered">Cantidad</th>
+                            <th class="centered">Precio Unitario</th>
+                            <th class="centered">Precio Total</th>
+                            <th class="centered">Peso</th>
+                            <th class="centered">Descuento</th>
+                            <th class="centered"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody_products"></tbody>
+                </table>
+                <div class="col-md-12 bg-warning">
+                    <p>Hola Mundo!</p>
+                </div>
+                                    
+            </div>
+            <div class="col-sm-3 col-md-2 bg-light">
+                <!-- Cuerpo derecho más angosto -->
+                <h3>Sección Derecha</h3>
+                <p>Contenido de la sección derecha</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
